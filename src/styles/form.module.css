@@ -1,0 +1,28 @@
+.form{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+}
+.inputField{
+    width: 70%;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.inputField:focus{
+    outline: none;
+}
+.button{
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}

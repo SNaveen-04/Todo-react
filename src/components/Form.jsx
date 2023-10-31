@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import styles from '../styles/Form.module.css';
 import React from "react";
 
 const Form = ({todo,setTodo,todolist,setTodoList}) =>{
@@ -20,14 +21,15 @@ const Form = ({todo,setTodo,todolist,setTodoList}) =>{
     }
     return(
         <React.Fragment>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.form} onSubmit={handleSubmit}>
                 <input 
+                className={styles.inputField}
                 placeholder="Enter the task"
                 type="text"
                 value={todo}
                 onChange={handleChange}
                 />
-                <button type="submit">Add Task</button>
+                <button className={styles.button} type="submit">Add Task</button>
             </form>
         </React.Fragment>
     )
