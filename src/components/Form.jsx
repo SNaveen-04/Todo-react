@@ -11,7 +11,7 @@ const Form = ({todo,setTodo,todolist,setTodoList}) =>{
     const handleSubmit = (event) =>{
         event.preventDefault();
         if(todo!=""){
-            setTodoList([...todolist, {todo:todo,id:Math.random()}]);
+            setTodoList([...todolist, {todo:todo,id:Math.random(),completed:false}]);
             setTodo("");
         }
         else{

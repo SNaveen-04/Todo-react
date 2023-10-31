@@ -7,7 +7,7 @@ function App() {
   
   const[todo,setTodo] = useState("")
   const[todolist,setTodoList] = useState([])
-
+  const[completedList,setCompletedList] = useState([])
   return (
     <React.Fragment>
       <Header />
@@ -17,7 +17,12 @@ function App() {
         todolist={todolist}
         setTodoList={setTodoList}
       />
-      <List todolist={todolist} setTodoList={setTodoList}/>
+      <List 
+        todolist={todolist} 
+        setTodoList={setTodoList}
+        completedList={completedList}
+        setCompletedList={setCompletedList}
+      />
     </React.Fragment>
   )
 }
