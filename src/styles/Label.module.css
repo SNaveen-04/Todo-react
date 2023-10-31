@@ -3,16 +3,13 @@
     font-weight: bold;
     color: #000000;
     padding: 0.5rem 1rem;
-    border-radius: 12px;
     margin-bottom: 1rem;
     width: 100%
 }
 .AlertLabel{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #636363;
+    font-size: 1.1em;
+    color: gray;
     padding: 0.5rem 1rem;
-    border-radius: 12px;
     margin-bottom: 1rem;
     width: 100%
 }

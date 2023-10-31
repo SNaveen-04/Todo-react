@@ -4,6 +4,7 @@
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
+    font-family: sans-serif;
     background-color: white;
     border: 1px solid rgb(215, 215, 215);
     box-shadow: 3px 2px whitesmoke;
@@ -16,18 +17,30 @@
     justify-content: center;
     align-items: center;
 }
+.Completeditem {
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    display: flex;
+    text-decoration: line-through;
+    justify-content: center;
+    align-items: center;
+}
 .btnContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .button{
-    background-color: tomato;
+    background-color: white;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     margin: 5px;
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
+}
+.button:hover{
+    box-shadow: 1px 1px 1px 1px rgb(220, 220, 220);
 }

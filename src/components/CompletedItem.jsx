@@ -7,10 +7,10 @@ const CompletedItem = ({ item, completedList, setCompletedList }) => {
   };
   return (
     <div className={styles.ItemContainer}>
-      <div className={styles.item}>{item.todo}</div>
+      <div className={styles.Completeditem}>{item.todo}</div>
       <div className={styles.btnContainer}>
         <button className={styles.button} onClick={handleDelete}>
-          Delete
+          X
         </button>
       </div>
     </div>

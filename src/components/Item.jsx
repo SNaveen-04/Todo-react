@@ -16,6 +16,9 @@ const Item = ({
   //edit a item from the list
   const handleEdit = () => {
     var editedtodo = prompt("Edit your todo", item.todo);
+    while(editedtodo === "") {
+      editedtodo = prompt("Edit your todo", item.todo);
+    }
     var newtodo = [...todolist];
     newtodo[index].todo = editedtodo;
     setTodoList(newtodo);
@@ -42,7 +45,7 @@ const Item = ({
           Complete
         </button>
         <button className={styles.button} onClick={handleDelete}>
-          Delete
+          X
         </button>
       </div>
     </div>
